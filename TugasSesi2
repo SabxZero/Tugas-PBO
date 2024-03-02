@@ -1,0 +1,26 @@
+public class Handphone {
+    String jenis_hp;
+    int tahun_pembuatan;
+    
+    public void setdataHP(String jenis, int tahun){
+        this.jenis_hp = jenis;
+        this.tahun_pembuatan = tahun;
+    }
+    
+    String getjenishp(){
+        return jenis_hp;
+    }
+    
+    int gettahunpembuatan(){
+        return tahun_pembuatan;
+    }
+    
+    public static void main(String[] args){
+        Handphone hp = new Handphone();
+        hp.setdataHP("Smartphone", 2022);
+        
+        // Menampilkan hasil menggunakan System.out.println
+        System.out.println("Jenis HP: " + hp.getjenishp());
+        System.out.println("Tahun Pembuatan: " + hp.gettahunpembuatan());
+    }
+}
